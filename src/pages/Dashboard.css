@@ -58,17 +58,35 @@
 }
 
 /* Header styles */
+/* Header styles */
 .header {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
+  flex-direction: row; /* Align items in a row */
+  justify-content: space-between; /* Space out items evenly */
+  align-items: center; /* Vertically align items to the center */
   margin-bottom: 32px;
   background-color: white; /* White background for the header */
   color: #1e3a8a; /* Dark blue text color */
   padding: 16px;
-  border-radius: 8px;
 }
+
+.header-title {
+  margin-bottom: 0; /* Remove bottom margin */
+  color: #1e3a8a; /* Dark blue text for header title */
+}
+
+.header-actions {
+  display: flex;
+  align-items: center; /* Center the buttons vertically */
+  gap: 16px; /* Add space between buttons */
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding: 16px 32px; /* Optional: Add more padding for larger screens */
+  }
+}
+
 
 @media (min-width: 768px) {
   .header {
@@ -77,11 +95,6 @@
   }
 }
 
-.header-title {
-  margin-bottom: 16px;
-  color: #1e3a8a; /* Dark blue text for header title */
-
-}
 
 @media (min-width: 768px) {
   .header-title {
@@ -123,12 +136,7 @@
   }
 }
 
-.header-actions {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-top: 16px;
-}
+
 
 @media (min-width: 768px) {
   .header-actions {
