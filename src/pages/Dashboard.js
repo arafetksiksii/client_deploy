@@ -79,7 +79,7 @@ const Dashboard = () => {
   const generateQR = async () => {
     try {
       setIsLoading(true)
-      const qrData = "https://yourwebsite.com/presentation"
+      const qrData = "https://client-deploy-nds9cnc9r-arafetksiksi7-gmailcoms-projects.vercel.app/home"
       const url = await QRCode.toDataURL(qrData)
       setQrCodeUrl(url)
       setShowQrDialog(true)

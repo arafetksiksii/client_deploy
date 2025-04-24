@@ -2,31 +2,39 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import API from "../services/api";
 
-function LoginPage() {
+function SignupPage() {
+  const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [role, setRole] = useState("user");
   const [error, setError] = useState("");
   const navigate = useNavigate();
 
-  const handleLogin = async (e) => {
+  const handleSignup = async (e) => {
     e.preventDefault();
     try {
-      const response = await API.post("/auth/login", { email, password });
-      localStorage.setItem("token", response.data.token);
-      localStorage.setItem("user", JSON.stringify(response.data.user));
-      navigate("/dashboard");
+      await API.post("/auth/signup", { username, email, password, role });
+      navigate("/");
     } catch (err) {
-      setError(err.response?.data?.message || "Login failed");
+      setError(err.response?.data?.message || "Signup failed");
     }
   };
 
   return (
     <div style={styles.container}>
-      <form onSubmit={handleLogin} style={styles.form}>
+      <form onSubmit={handleSignup} style={styles.form}>
         <img src="/images/logo_it_bafa.png" alt="Logo" style={styles.logo} />
-        <h2 style={styles.title}>Welcome Back</h2>
+        <h2 style={styles.title}>Create Account</h2>
         {error && <p style={styles.error}>{error}</p>}
 
+        <input
+          type="text"
+          placeholder="Username"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+          style={styles.input}
+          required
+        />
         <input
           type="email"
           placeholder="Email"
@@ -44,13 +52,11 @@ function LoginPage() {
           required
         />
 
-        <button type="submit" style={styles.button}>Login</button>
+        <button type="submit" style={styles.button}>Sign Up</button>
 
         <p style={styles.linkText}>
-          Don't have an account?{" "}
-          <span onClick={() => navigate("/signup")} style={styles.link}>
-            Create one
-          </span>
+          Already have an account?{" "}
+          <span onClick={() => navigate("/")} style={styles.link}>Log in</span>
         </p>
       </form>
     </div>
@@ -125,4 +131,4 @@ const styles = {
   },
 };
 
-export default LoginPage;
+export default SignupPage;
