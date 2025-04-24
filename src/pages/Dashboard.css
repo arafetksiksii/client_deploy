@@ -61,9 +61,8 @@
 /* Header styles */
 .header {
   display: flex;
-  flex-direction: row; /* Align items in a row */
-  justify-content: space-between; /* Space out items evenly */
-  align-items: center; /* Vertically align items to the center */
+  justify-content: space-between; /* Distribute items evenly */
+  align-items: center; /* Align items vertically in the center */
   margin-bottom: 32px;
   background-color: white; /* White background for the header */
   color: #1e3a8a; /* Dark blue text color */
@@ -71,14 +70,16 @@
 }
 
 .header-title {
+  flex-grow: 1; /* Allow title to take available space */
   margin-bottom: 0; /* Remove bottom margin */
   color: #1e3a8a; /* Dark blue text for header title */
 }
 
+
 .header-actions {
-  display: flex;
+  display: flex; /* Align the buttons in a row */
   align-items: center; /* Center the buttons vertically */
-  gap: 16px; /* Add space between buttons */
+  gap: 16px; /* Add space between the buttons */
 }
 
 @media (min-width: 768px) {
@@ -116,11 +117,13 @@
 }
 
 @media (min-width: 768px) {
+  .header {
+    padding: 16px 32px; /* Add padding for larger screens */
+  }
   .welcome-title {
     font-size: 36px;
   }
 }
-
 .emoji {
   margin-right: 8px;
 }
