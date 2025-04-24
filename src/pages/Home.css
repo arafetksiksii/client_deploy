@@ -109,8 +109,8 @@ button {
 .nav-links {
   display: flex;
   gap: 2rem;
-  background-color: darkblue; /* White background for the header */
-  background: darkblue; /* White background for the header */
+  background-color: white; /* White background for the header */
+  background: white; /* White background for the header */
 
 }
 
