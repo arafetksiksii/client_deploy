@@ -16,6 +16,10 @@
   opacity: 0.2;
   z-index: 0;
 }
+.logo-icon img {
+  height: 1em; /* Adjust height to match emoji size */
+  vertical-align: middle; /* Ensures the image aligns with text */
+}
 
 .content-container {
   position: relative;

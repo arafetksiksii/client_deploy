@@ -49,6 +49,10 @@ button {
   outline: none;
   font-family: inherit;
 }
+.logo-icon img {
+  height: 1em; /* Adjust height to match emoji size */
+  vertical-align: middle; /* Ensures the image aligns with text */
+}
 
 /* Container */
 .home-container {

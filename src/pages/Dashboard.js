@@ -130,8 +130,9 @@ const Dashboard = () => {
           <div className="header-title">
           <h1 className="welcome-title">
   <span className="emoji">👋</span> 
+  <span className="logo-icon">
   <img src="/images/logo_it_bafa.png" alt="IT Bafa Logo" className="logo" />
-  Bienvenue, {user.username}
+</span>  Bienvenue, {user.username}
 </h1>
 
             <p className="welcome-subtitle">Gérez vos présentations et événements en toute simplicité</p>
