@@ -53,12 +53,6 @@ button {
   height: 1em; /* Adjust height to match emoji size */
   vertical-align: middle; /* Ensures the image aligns with text */
 }
-.home-header.white-background {
-  background-color: white;
-  color: black;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
-}
-
 
 /* Container */
 .home-container {

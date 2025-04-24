@@ -8,13 +8,10 @@ const Home = () => {
   const navigate = useNavigate()
   const [activeIndex, setActiveIndex] = useState(null)
   const [isLoaded, setIsLoaded] = useState(false)
-  const [headerBackground, setHeaderBackground] = useState(false);
 
   useEffect(() => {
     // Animation d'entrée
-    setIsLoaded(true);
-    setHeaderBackground(true);
-
+    setIsLoaded(true)
   }, [])
 
   const sections = [

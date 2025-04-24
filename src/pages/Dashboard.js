@@ -11,8 +11,6 @@ const Dashboard = () => {
   const [showQrDialog, setShowQrDialog] = useState(false)
   const [user, setUser] = useState({ username: "", email: "" })
   const [isLoading, setIsLoading] = useState(true)
-  const [headerBackground, setHeaderBackground] = useState(false);
-
 
   useEffect(() => {
     // Simulate loading
@@ -27,7 +25,6 @@ const Dashboard = () => {
 
     const userData = JSON.parse(localStorage.getItem("user") || '{"username":"User","email":"user@example.com"}')
     setUser(userData)
-    setHeaderBackground(true); // Make header background white
 
     return () => clearTimeout(timer)
   }, [navigate])
@@ -129,8 +126,8 @@ const Dashboard = () => {
       {/* Content container */}
       <div className="content-container">
         {/* Header with user profile */}
-        <div className={`header ${headerBackground ? "white-background" : ""}`}>
-        <div className="header-title">
+        <div className="header">
+          <div className="header-title">
           <h1 className="welcome-title">
   <span className="emoji">👋</span> 
   <span className="logo-icon">
