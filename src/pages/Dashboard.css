@@ -64,6 +64,10 @@
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 32px;
+  background-color: white; /* White background for the header */
+  color: #1e3a8a; /* Dark blue text color */
+  padding: 16px;
+  border-radius: 8px;
 }
 
 @media (min-width: 768px) {
@@ -75,13 +79,18 @@
 
 .header-title {
   margin-bottom: 16px;
+  color: #1e3a8a; /* Dark blue text for header title */
+
 }
 
 @media (min-width: 768px) {
   .header-title {
     margin-bottom: 0;
+    color: #1e3a8a; /* Dark blue text for header title */
+
   }
 }
+
 
 .welcome-title {
   font-size: 28px;
