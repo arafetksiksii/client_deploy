@@ -58,11 +58,10 @@
 }
 
 /* Header styles */
-/* Header styles */
 .header {
   display: flex;
-  justify-content: space-between; /* Distribute items evenly */
-  align-items: center; /* Align items vertically in the center */
+  justify-content: space-between; /* Align items horizontally */
+  align-items: center; /* Vertically center the items */
   margin-bottom: 32px;
   background-color: white; /* White background for the header */
   color: #1e3a8a; /* Dark blue text color */
@@ -70,41 +69,11 @@
 }
 
 .header-title {
-  flex-grow: 1; /* Allow title to take available space */
-  margin-bottom: 0; /* Remove bottom margin */
+  display: flex;
+  align-items: center; /* Align logo and text horizontally */
+  gap: 8px; /* Space between logo and title */
   color: #1e3a8a; /* Dark blue text for header title */
 }
-
-
-.header-actions {
-  display: flex; /* Align the buttons in a row */
-  align-items: center; /* Center the buttons vertically */
-  gap: 16px; /* Add space between the buttons */
-}
-
-@media (min-width: 768px) {
-  .header {
-    padding: 16px 32px; /* Optional: Add more padding for larger screens */
-  }
-}
-
-
-@media (min-width: 768px) {
-  .header {
-    flex-direction: row;
-    align-items: center;
-  }
-}
-
-
-@media (min-width: 768px) {
-  .header-title {
-    margin-bottom: 0;
-    color: #1e3a8a; /* Dark blue text for header title */
-
-  }
-}
-
 
 .welcome-title {
   font-size: 28px;
@@ -116,37 +85,17 @@
   background-clip: text;
 }
 
-@media (min-width: 768px) {
-  .header {
-    padding: 16px 32px; /* Add padding for larger screens */
-  }
-  .welcome-title {
-    font-size: 36px;
-  }
-}
 .emoji {
   margin-right: 8px;
 }
 
-.welcome-subtitle {
-  color: #94a3b8;
-  font-size: 14px;
+.header-actions {
+  display: flex; /* Align action buttons horizontally */
+  align-items: center; /* Center the buttons vertically */
+  gap: 16px; /* Space between buttons */
 }
 
-@media (min-width: 768px) {
-  .welcome-subtitle {
-    font-size: 16px;
-  }
-}
-
-
-
-@media (min-width: 768px) {
-  .header-actions {
-    margin-top: 0;
-  }
-}
-
+/* Adjust button sizes */
 .icon-button {
   width: 40px;
   height: 40px;
@@ -164,6 +113,17 @@
 .icon-button:hover {
   background-color: rgba(255, 255, 255, 0.15);
 }
+
+/* Responsive design */
+@media (min-width: 768px) {
+  .header {
+    padding: 16px 32px; /* Add more padding for larger screens */
+  }
+  .welcome-title {
+    font-size: 36px;
+  }
+}
+
 
 .icon {
   width: 20px;
