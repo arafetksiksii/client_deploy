@@ -76,7 +76,6 @@ const Home = () => {
         <span className="logo-icon">
   <img src="/images/logo_it_bafa.png" alt="IT Bafa Logo" className="logo" />
 </span>
-          <span className="logo-text">IT BAFA</span>
         </div>
         <nav className="nav-links">
           <a href="#" className="nav-link active">
@@ -101,9 +100,7 @@ const Home = () => {
       {/* Hero section */}
       <section className={`hero-section ${isLoaded ? "loaded" : ""}`}>
         <h1 className="hero-title">
-        <span className="logo-icon">
-  <img src="/images/logo_it_bafa.png" alt="IT Bafa Logo" className="logo" />
-</span>
+       
           <span>Bienvenue sur IT BAFA</span>
         </h1>
         <p className="hero-subtitle">Découvrez notre plateforme de gestion d'événements et de services</p>
