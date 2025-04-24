@@ -20,6 +20,11 @@
   height: 1em; /* Adjust height to match emoji size */
   vertical-align: middle; /* Ensures the image aligns with text */
 }
+.header.white-background {
+  background-color: white;  /* White background */
+  color: black;  /* Ensures the text is readable */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+}
 
 .content-container {
   position: relative;
