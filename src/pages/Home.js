@@ -73,7 +73,9 @@ const Home = () => {
       {/* Header avec navigation */}
       <header className="home-header">
         <div className="logo">
-          <span className="logo-icon">🌟</span>
+        <span className="logo-icon">
+  <img src="/images/logo_it_bafa.png" alt="IT Bafa Logo" className="logo" />
+</span>
           <span className="logo-text">IT BAFA</span>
         </div>
         <nav className="nav-links">
