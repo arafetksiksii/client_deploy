@@ -127,7 +127,7 @@ const MenusPage = () => {
 
     // Set preview image if available
     if (menu.image) {
-      setPreviewImage(`https://server-deploy-aq8t.onrender.com${menu.image}`)
+      setPreviewImage(`${menu.image}`)
     } else {
       setPreviewImage(null)
     }
@@ -438,7 +438,7 @@ const MenusPage = () => {
                 <div key={menu._id} className="menu-card">
                   <div className="card-image-container">
                     <img
-                      src={menu.image ? `https://server-deploy-aq8t.onrender.com${menu.image}` : "/images/placeholder.png"}
+                      src={menu.image ? `${menu.image}` : "/images/placeholder.png"}
                       alt={menu.title}
                       className="card-image"
                       onError={(e) => (e.target.src = "/images/placeholder.png")}

@@ -104,7 +104,7 @@ const PresentationsPage = () => {
 
     // Set preview image if available
     if (presentation.image) {
-      setPreviewImage(`https://server-deploy-aq8t.onrender.com${presentation.image}`)
+      setPreviewImage(`${presentation.image}`)
     } else {
       setPreviewImage(null)
     }
@@ -291,7 +291,7 @@ const PresentationsPage = () => {
                   <div className="card-image-container">
                     <img
                       src={
-                        presentation.image ? `https://server-deploy-aq8t.onrender.com${presentation.image}` : "/images/placeholder.png"
+                        presentation.image ? `${presentation.image}` : "/images/placeholder.png"
                       }
                       alt={presentation.title}
                       className="card-image"

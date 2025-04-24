@@ -44,8 +44,8 @@ const MenusClient = () => {
         {menus.map((menu) => (
           <div key={menu._id} style={styles.card}>
             <img
-              src={menu.image ? `https://server-deploy-aq8t.onrender.com${menu.image}` : "/images/placeholder.png"}
-              alt="menu"
+src={menu.image ? menu.image : "/images/placeholder.png"}
+alt="menu"
               style={styles.image}
               onError={(e) => (e.target.src = "/images/placeholder.png")}
             />

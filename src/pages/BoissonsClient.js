@@ -44,11 +44,8 @@ const BoissonsClient = () => {
         {boissons.map((boisson) => (
           <div key={boisson._id} style={styles.card}>
             <img
-              src={
-                boisson.image
-                  ? `https://server-deploy-aq8t.onrender.com${boisson.image}`
-                  : "/images/placeholder.png"
-              }
+             src={boisson.image ? boisson.image : "/images/placeholder.png"}
+
               alt="boisson"
               style={styles.image}
               onError={(e) => (e.target.src = "/images/placeholder.png")}

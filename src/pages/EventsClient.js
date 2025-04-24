@@ -48,8 +48,8 @@ const EventsClient = () => {
         {events.map((event) => (
           <div key={event._id} style={styles.card}>
             <img
-              src={event.image ? `https://server-deploy-aq8t.onrender.com${event.image}` : "/images/placeholder.png"}
-              alt="event"
+src={event.image ? event.image : "/images/placeholder.png"}
+alt="event"
               style={styles.image}
               onError={(e) => (e.target.src = "/images/placeholder.png")}
             />

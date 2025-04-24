@@ -44,7 +44,7 @@ const PresentationsClient = () => {
         {presentations.map((p) => (
           <div key={p._id} style={styles.card}>
             <img
-              src={p.image ? `https://server-deploy-aq8t.onrender.com${p.image}` : "/images/placeholder.png"}
+              src={p.image ? `${p.image}` : "/images/placeholder.png"}
               alt="presentation"
               style={styles.image}
               onError={(e) => (e.target.src = "/images/placeholder.png")}

@@ -108,7 +108,7 @@ const BoissonsPage = () => {
 
     // Set preview image if available
     if (boisson.image) {
-      setPreviewImage(`https://server-deploy-aq8t.onrender.com${boisson.image}`)
+      setPreviewImage(boisson.image);
     } else {
       setPreviewImage(null)
     }
@@ -334,8 +334,8 @@ const BoissonsPage = () => {
                 <div key={boisson._id} className="boisson-card">
                   <div className="card-image-container">
                     <img
-                      src={boisson.image ? `https://server-deploy-aq8t.onrender.com${boisson.image}` : "/images/placeholder.png"}
-                      alt={boisson.title}
+src={boisson.image ? boisson.image : "/images/placeholder.png"}
+alt={boisson.title}
                       className="card-image"
                       onError={(e) => (e.target.src = "/images/placeholder.png")}
                     />
