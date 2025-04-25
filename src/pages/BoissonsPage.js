@@ -283,7 +283,7 @@ const BoissonsPage = () => {
                   />
                   {previewImage && (
                     <div className="image-preview-container">
-                      <img src={previewImage || "/images/placeholder.png"} alt="Aperçu" className="image-preview" />
+                      <img src={previewImage || "/Menu/images/placeholder.png"} alt="Aperçu" className="image-preview" />
                       <button
                         type="button"
                         className="remove-preview-btn"
@@ -334,10 +334,10 @@ const BoissonsPage = () => {
                 <div key={boisson._id} className="boisson-card">
                   <div className="card-image-container">
                     <img
-src={boisson.image ? boisson.image : "/images/placeholder.png"}
+src={boisson.image ? boisson.image : "/Menu/images/placeholder.png"}
 alt={boisson.title}
                       className="card-image"
-                      onError={(e) => (e.target.src = "/images/placeholder.png")}
+                      onError={(e) => (e.target.src = "/Menu/images/placeholder.png")}
                     />
                     <div className="card-actions">
                       <button

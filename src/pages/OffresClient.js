@@ -65,7 +65,7 @@ const OffresClient = () => {
 const styles = {
   container: {
     minHeight: "100vh",
-    backgroundImage: "url('../../public/images/background_dashboard.jpg')",
+    backgroundImage: "url('https://itbafa.com/Menu/images/background_dashboard.jpg')",
     backgroundSize: "cover",
     backgroundPosition: "center",
     padding: "60px 20px",

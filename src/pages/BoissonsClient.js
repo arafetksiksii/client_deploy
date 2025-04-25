@@ -44,11 +44,11 @@ const BoissonsClient = () => {
         {boissons.map((boisson) => (
           <div key={boisson._id} style={styles.card}>
             <img
-             src={boisson.image ? boisson.image : "/images/placeholder.png"}
+             src={boisson.image ? boisson.image : "/Menu/images/placeholder.png"}
 
               alt="boisson"
               style={styles.image}
-              onError={(e) => (e.target.src = "/images/placeholder.png")}
+              onError={(e) => (e.target.src = "/Menu/images/placeholder.png")}
             />
             <div style={styles.details}>
               <h3>{boisson.title}</h3>
@@ -72,7 +72,7 @@ const BoissonsClient = () => {
 const styles = {
   container: {
     minHeight: "100vh",
-    backgroundImage: "url('../../public/images/background_dashboard.jpg')",
+    backgroundImage: "url('https://itbafa.com/Menu/images/background_dashboard.jpg')",
     backgroundSize: "cover",
     backgroundPosition: "center",
     padding: "60px 20px",

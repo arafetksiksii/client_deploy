@@ -23,7 +23,7 @@ function SignupPage() {
   return (
     <div style={styles.container}>
       <form onSubmit={handleSignup} style={styles.form}>
-        <img src="/images/logo_it_bafa.png" alt="Logo" style={styles.logo} />
+        <img src="/Menu/images/logo_it_bafa.png" alt="Logo" style={styles.logo} />
         <h2 style={styles.title}>Create Account</h2>
         {error && <p style={styles.error}>{error}</p>}
 

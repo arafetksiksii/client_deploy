@@ -23,7 +23,7 @@ function LoginPage() {
   return (
     <div style={styles.container}>
       <form onSubmit={handleLogin} style={styles.form}>
-        <img src="/images/logo_it_bafa.png" alt="Logo" style={styles.logo} />
+        <img src="/Menu/images/logo_it_bafa.png" alt="Logo" style={styles.logo} />
         <h2 style={styles.title}>Welcome Back</h2>
         {error && <p style={styles.error}>{error}</p>}
 

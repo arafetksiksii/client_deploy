@@ -20,7 +20,7 @@ import SignupPage from "./pages/SignupPage";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/Menu">
       <Routes>
         {/* 🔐 Admin / Authenticated Routes */}
         <Route path="/" element={<LoginPage />} />
@@ -32,7 +32,6 @@ function App() {
         <Route path="/offres" element={<OffresPage />} />
         <Route path="/signup" element={<SignupPage />} />
 
-
         {/* 🌍 Public / Client Routes */}
         <Route path="/home" element={<Home />} />
         <Route path="/events-client" element={<EventsClient />} />
@@ -40,7 +39,6 @@ function App() {
         <Route path="/boissons-client" element={<BoissonsClient />} />
         <Route path="/offres-client" element={<OffresClient />} />
         <Route path="/presentations-client" element={<PresentationsClient />} />
-        
       </Routes>
     </Router>
   );

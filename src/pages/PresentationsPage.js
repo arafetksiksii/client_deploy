@@ -239,7 +239,7 @@ const PresentationsPage = () => {
                   />
                   {previewImage && (
                     <div className="image-preview-container">
-                      <img src={previewImage || "/images/placeholder.png"} alt="Aperçu" className="image-preview" />
+                      <img src={previewImage || "/Menu/images/placeholder.png"} alt="Aperçu" className="image-preview" />
                       <button
                         type="button"
                         className="remove-preview-btn"
@@ -291,11 +291,11 @@ const PresentationsPage = () => {
                   <div className="card-image-container">
                     <img
                       src={
-                        presentation.image ? `${presentation.image}` : "/images/placeholder.png"
+                        presentation.image ? `${presentation.image}` : "/Menu/images/placeholder.png"
                       }
                       alt={presentation.title}
                       className="card-image"
-                      onError={(e) => (e.target.src = "/images/placeholder.png")}
+                      onError={(e) => (e.target.src = "/Menu/images/placeholder.png")}
                     />
                     <div className="card-actions">
                       <button

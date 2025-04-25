@@ -111,10 +111,10 @@ const EventsPage = () => {
         {events.map((event) => (
           <div key={event._id} style={styles.card}>
 <img
-src={event.image ? event.image : "/images/placeholder.png"}
+src={event.image ? event.image : "/Menu/images/placeholder.png"}
 alt="event"
   style={styles.image}
-  onError={(e) => (e.target.src = "/images/placeholder.png")}
+  onError={(e) => (e.target.src = "/Menu/images/placeholder.png")}
 />
 
             <div style={styles.details}>
@@ -147,7 +147,7 @@ alt="event"
 const styles = {
   container: {
     minHeight: "100vh",
-    backgroundImage: "url('../../public/images/background_dashboard.jpg')",
+    backgroundImage: "url('https://itbafa.com/Menu/images/background_dashboard.jpg')",
     backgroundSize: "cover",
     backgroundPosition: "center",
     padding: "60px 20px",

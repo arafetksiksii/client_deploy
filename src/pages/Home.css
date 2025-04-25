@@ -69,7 +69,7 @@ button {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../../public/images/background_dashboard.jpg");
+  background-image: url("https://itbafa.com/Menu/images/background_dashboard.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -111,6 +111,7 @@ button {
   gap: 2rem;
   background-color: white; /* White background for the header */
   background: white; /* White background for the header */
+  text-decoration-color: #6366f1;
 
 }
 
@@ -119,11 +120,13 @@ button {
   font-weight: 500;
   opacity: 0.8;
   transition: var(--transition);
+  color: #7c3aed; /* <-- Add this line for violet */
 }
 
 .nav-link:hover,
 .nav-link.active {
   opacity: 1;
+  color: #6d28d9; /* <-- Optional: slightly darker violet on hover */
 }
 
 .nav-link.active::after {

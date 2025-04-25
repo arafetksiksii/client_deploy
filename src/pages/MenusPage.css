@@ -47,7 +47,7 @@ body {
   color: var(--text-light);
   padding: 2rem 1rem 6rem;
   position: relative;
-  background-image: url("../../public/images/background_dashboard.jpg");
+  background-image: url("https://itbafa.com/Menu/images/background_dashboard.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

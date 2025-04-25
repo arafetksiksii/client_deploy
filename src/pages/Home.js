@@ -74,7 +74,7 @@ const Home = () => {
       <header className="home-header">
         <div className="logo">
         <span className="logo-icon">
-  <img src="/images/logo_it_bafa.png" alt="IT Bafa Logo" className="logo" />
+  <img src="/Menu/images/logo_it_bafa.png" alt="IT Bafa Logo" className="logo" />
 </span>
         </div>
         <nav className="nav-links">

@@ -79,7 +79,7 @@ const Dashboard = () => {
   const generateQR = async () => {
     try {
       setIsLoading(true)
-      const qrData = "https://client-deploy-nine.vercel.app/home"
+      const qrData = "https://itbafa.com/Menu/Home"
       const url = await QRCode.toDataURL(qrData)
       setQrCodeUrl(url)
       setShowQrDialog(true)
@@ -121,7 +121,7 @@ const Dashboard = () => {
   return (
     <div className="dashboard">
       {/* Background overlay with blur effect */}
-      <div className="background-overlay" style={{ backgroundImage: `url('../../public/images/background_dashboard.jpg')` }}></div>
+      <div className="background-overlay" style={{ backgroundImage: `url('https://itbafa.com/Menu/images/background_dashboard.jpg')` }}></div>
 
       {/* Content container */}
       <div className="content-container">
@@ -129,7 +129,7 @@ const Dashboard = () => {
         <div className="header">
           <div className="header-title">
   <span className="logo-icon">
-  <img src="/images/logo_it_bafa.png" alt="IT Bafa Logo" className="logo" />
+  <img src="/Menu/images/logo_it_bafa.png" alt="IT Bafa Logo" className="logo" />
 </span> 
 
 

@@ -438,10 +438,10 @@ const MenusPage = () => {
                 <div key={menu._id} className="menu-card">
                   <div className="card-image-container">
                     <img
-                      src={menu.image ? `${menu.image}` : "/images/placeholder.png"}
+                      src={menu.image ? `${menu.image}` : "/Menu/images/placeholder.png"}
                       alt={menu.title}
                       className="card-image"
-                      onError={(e) => (e.target.src = "/images/placeholder.png")}
+                      onError={(e) => (e.target.src = "/Menu/images/placeholder.png")}
                     />
                     <div className="card-actions">
                       <button
